@@ -33,6 +33,7 @@ export default function LoginForm({emaill}:{emaill:string}) {
             setIsLoading(false);
         }
         else if(data.data.status === false){
+          alert("No such Account!Signup First")
             setIsEmailIncorrect(true);
             setIsLoading(false);
             router.push("/signup")
