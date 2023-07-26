@@ -33,7 +33,7 @@ export default function Main() {
       <Head>
         <title>{`User`}</title>
       </Head>
-         <div className='flex flex-col justify-between p-14 gap-10 '>
+         <div className='flex flex-col md:flex-row justify-between p-14 gap-10 '>
             <div>
             <Image src={'/logo.png'} alt="logo" width={300} height={300}/>
             </div>
