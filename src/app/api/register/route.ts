@@ -7,6 +7,10 @@ import { sign } from "jsonwebtoken";
 export async function POST(request:NextRequest){
     const {name,email,phonenumber,password} = await request.json()
     console.log("EEEEEEE",email);
+
+    if(!name || !email || !phonenumber || !password){
+        return NextResponse.json({"message":"missing fields",status:"missing"})
+    }
     try{
                 const data = await db.select().from(userTable).where(or(eq(userTable.email,email),eq(userTable.phonenumber,phonenumber)))
                 if(data.length){

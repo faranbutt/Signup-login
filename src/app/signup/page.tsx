@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { user, newUser } from "../../lib/atom";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Page() {
   const router = useRouter();
@@ -35,22 +36,29 @@ export default function Page() {
     setEmail("");
     setPassword("");
     setPhoneNumber("");
-    if (data.data.status) {
+    if (data.data.status === true) {
       setNewestUser({ name, email, password, phonenumber, status: true });
       setOldUser({...olduser,status:false})
       setIsLoading(false);
       router.push("/Welcome");
-    } else if (!data.data.status) {
+    } else if (data.data.status === false) {
       setOldUser({ name, email, password, status: true });
       setIsLoading(false);
       router.push("/Welcome");
+    }
+    else if(data.data.status === 'missing'){
+      alert('Please fill all fields')
+      setIsLoading(false);
     }
   };
 
   return (
     <div>
-      <section className="bg-gray-50 dark:bg-gray-900">
-        <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0 text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium  text-sm text-center">
+      <section className="w-screen h-screen bg-gradient-to-tr from-blue-500 to-white dark:bg-gray-900">
+      <div className='flex justify-center p-14'>
+            <Image src={'/logo.png'} alt="logo" width={300} height={300}/>
+    </div>
+        <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0 text-white  focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium  text-sm text-center">
           <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
             <div className="p-6 space-y-4 md:space-y-2 sm:p-8">
               <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">

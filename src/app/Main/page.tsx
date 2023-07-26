@@ -5,7 +5,7 @@ import { user,newUser,defaultOldUser,defaultNewUser,auth } from "@/lib/atom";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import ProfilePage from "@/components/UserProfile";
-
+import Head from "next/head";
 export default function Main() {
     
     
@@ -20,7 +20,6 @@ export default function Main() {
         setOldUser({email:"",password:"",name:"",status:true})
         setNewestUser({email:"",password:"",name:"",phonenumber:"",status:false})
         setAuth(false);
-        setIsLoading(false);
         router.push('/');
     }
     useEffect(()=>{
@@ -31,7 +30,10 @@ export default function Main() {
 
     return (
     <div className="bg-gradient-to-tr from-blue-500 to-orange-400">
-         <div className='flex justify-between p-14 '>
+      <Head>
+        <title>{`User`}</title>
+      </Head>
+         <div className='flex flex-col justify-between p-14 gap-10 '>
             <div>
             <Image src={'/logo.png'} alt="logo" width={300} height={300}/>
             </div>

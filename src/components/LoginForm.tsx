@@ -12,7 +12,7 @@ export default function LoginForm({emaill}:{emaill:string}) {
     const [ispasswordCorrect,setIsPasswordCorrect] = useState(false);
     const [isEmailIncorrect,setIsEmailIncorrect] = useState(false);
     const [isLoading,setIsLoading] = useState(false);
-
+    const [missingFields,setMissingFields] = useState(false);
     const loginUser = async (email:string,password:string) => {
         setIsLoading(true);
         console.log(email,password)
@@ -36,6 +36,9 @@ export default function LoginForm({emaill}:{emaill:string}) {
             setIsEmailIncorrect(true);
             setIsLoading(false);
             router.push("/signup")
+        }
+        else if(data.data.status === 'missing'){
+          alert("Please fill all fields");
         }
     }
   return (

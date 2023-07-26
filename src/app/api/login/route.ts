@@ -7,6 +7,7 @@ import { eq } from 'drizzle-orm';
 
 export async function POST(req:NextRequest){
     const {email,password} = await req.json();
+    if(!email || !password) {return NextResponse.json({"message":"Missing Fields",status:"missing"})};
     console.log(email,password)
     try{
         const data = await db.select().from(userTable).where(eq(userTable.email,email))

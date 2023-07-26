@@ -21,8 +21,8 @@ export default function Page() {
       </div>
       <div className="font-bold text-3xl flex justify-center items-center">
          {olduser.status && 
-            <div className="text-white flex flex-col gap-10">
-              <div className="font-extrabold text-transparent text-8xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+            <div className="text-white flex flex-col justify-center items-center gap-10 text-center">
+              <div className="font-extrabold text-transparent sm:text-5xl md:text-8xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
                 Welcome Back
               </div>
               <div>
@@ -32,7 +32,7 @@ export default function Page() {
 
 
          {newestUser.status &&  
-        <div className='flex flex-col justify-center items-center'>
+        <div className='flex flex-col justify-center items-center text-center text-5xl'>
           <div> 
              <Image src={'/welcome.gif'} alt="wave" width={300} height={300}/> <br />
           </div>

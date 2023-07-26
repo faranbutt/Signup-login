@@ -6,8 +6,8 @@
 
 * Our primary objective is to achieve business outcomes that position your company for long term success. So when your     organization is facing a big data challenge, do not feel overwhelmed, we will face that challenge with you and prevail. This is our mission. This is our calling. This is our promise to you!
 ## Technologies used:
-* Frontend ===:> Next.js Tailwind CSS, Vercel
-* Backend ===:>  Next.js,JWT,Bcrypt
+* Frontend ===:> Next.js, Tailwind CSS, Vercel
+* Backend ===:>  Next.js, NeonDB(Serverless PostgreSQL), JWT,Bcrypt
 ## Key Features:
 * Optimized and Fast 🚀
 * The interface is interactive due to Tailwind be interactive with some meaningfull colors. 🎨
