@@ -1,4 +1,4 @@
-## Bitnine-Signup [![My Skills](https://skillicons.dev/icons?i=tailwind,nextjs,postgres,vercel,react)](https://skillicons.dev)
+## Bitnine-Signup [![My Skills](https://skillicons.dev/icons?i=ts,tailwind,nextjs,postgres,vercel,react)](https://skillicons.dev)
 
 # The Global Leader of Graph Business Solutions
 
@@ -6,7 +6,7 @@
 
 * Our primary objective is to achieve business outcomes that position your company for long term success. So when your     organization is facing a big data challenge, do not feel overwhelmed, we will face that challenge with you and prevail. This is our mission. This is our calling. This is our promise to you!
 ## Technologies used:
-* Frontend ===:> Next.js, Tailwind CSS, Vercel
+* Frontend ===:> Next.js, Tailwind CSS, Jotai(State Managment Tool), Vercel
 * Backend ===:>  Next.js, NeonDB(Serverless PostgreSQL),Drizzle ORM,JWT,Bcrypt
 ## Key Features:
 * Optimized and Fast 🚀
