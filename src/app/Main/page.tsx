@@ -66,7 +66,7 @@ export default function Main() {
             </div>
         </div>
         <div>
-            <ProfilePage />
+            {/* <ProfilePage /> */}
         </div>
     </div>
   )

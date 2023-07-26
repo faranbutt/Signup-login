@@ -6,7 +6,7 @@ import { useState } from "react";
 import { user, newUser } from "../../lib/atom";
 import Link from "next/link";
 
-export default function page() {
+export default function Page() {
   const router = useRouter();
   const [olduser, setOldUser] = useAtom(user);
   const [newestUser, setNewestUser] = useAtom(newUser);

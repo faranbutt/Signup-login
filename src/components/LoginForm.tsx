@@ -84,7 +84,7 @@ export default function LoginForm({emaill}:{emaill:string}) {
                   }
             </button>
             <p className="text-sm font-light text-gray-500 dark:text-gray-400">
-                Don't have an account? <Link href="/signup" className="font-medium text-primary-600 hover:underline dark:text-primary-500">Signup here</Link>
+                Don&apos;t have an account? <Link href="/signup" className="font-medium text-primary-600 hover:underline dark:text-primary-500">Signup here</Link>
             </p>
         </form>
     </div>

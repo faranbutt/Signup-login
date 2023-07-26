@@ -7,7 +7,7 @@ import { useAtom } from "jotai";
 import { user,newUser } from '../../lib/atom';
 import LoginForm from "@/components/LoginForm";
 
-export default function page() {
+export default function Page() {
     const [olduser,setOldUser]  = useAtom(user);
     const [newestUser,setNewestUser] = useAtom(newUser);
 
