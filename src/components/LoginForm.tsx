@@ -39,6 +39,8 @@ export default function LoginForm({emaill}:{emaill:string}) {
         }
         else if(data.data.status === 'missing'){
           alert("Please fill all fields");
+          setIsLoading(false);
+
         }
     }
   return (
