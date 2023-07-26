@@ -54,10 +54,10 @@ export default function Page() {
 
   return (
     <div>
-      <section className="w-screen h-screen bg-gradient-to-tr from-blue-500 to-white dark:bg-gray-900">
+      <section className="w-full h-full bg-gradient-to-tr from-blue-500 to-white dark:bg-gray-900">
       <div className='flex justify-center p-14'>
             <Image src={'/logo.png'} alt="logo" width={300} height={300}/>
-    </div>
+        </div>
         <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0 text-white  focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium  text-sm text-center">
           <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
             <div className="p-6 space-y-4 md:space-y-2 sm:p-8">
